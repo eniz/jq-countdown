@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>2014 FIFA World Cup Brazil</title>
+</head>
+    <body>
+        <div id="countdown">
+            <ul class="countdown">
+                <li class="days">
+                    <div class="value dayCount"></div>
+                    <div class="legendary timeRefDays"></div>
+                </li>
+                <li class="hours">
+                    <div class="value hourCount"></div>
+                    <div class="legendary timeRefHours"></div>
+                </li>
+                <li class="minutes">
+                    <div class="value minuteCount"></div>
+                    <div class="legendary timeRefMinutes"></div>
+                </li>
+                <li class="seconds">
+                    <div class="value secondCount"></div>
+                    <div class="legendary timeRefSeconds"></div>
+                </li>
+            </ul>
+        </div>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script src="countdown.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // countdown
+                $("#countdown").countdown({
+                    date: "12 June 2014 23:00:00",
+                    format: "on"
+                },
+                function () {
+                    // callback function
+                });
+            });
+        </script>
+    </body>
+</html>
